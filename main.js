@@ -22,6 +22,7 @@ function getComputerChoice() {
 //Prompts the user for his choice and return it
 function getHumanChoice() {
     let humanChoice = prompt("- rock\n- paper\n- scissors\nPlease insert your choice:").toString().toLowerCase();
+    
     switch (humanChoice) {
         case "rock":
             return "rock";
@@ -58,6 +59,7 @@ function playRound(humanChoice, computerChoice) {
     return "humanWin";
 }
 
+//Starts one best of 5 game
 function playgame() {
     let humanScore = 0;
     let computerScore = 0;
@@ -85,5 +87,4 @@ function playgame() {
     else {
         console.log("It's a draw! How boring :/");
     }
-
 }
